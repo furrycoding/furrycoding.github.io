@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Me and the boys</title>
+		<script>
+			function divmod(x, y) {
+				var mod = x % y;
+				var div = (x - mod) / y;
+				return [div, mod];
+			}
+			
+			function computeString() {
+				var target = 1726945200000;
+				var x = target - Date.now();
+				
+				x = Math.round(x / (60 * 1000));
+				
+				var [x, minutes] = divmod(x, 60);
+				var [x, hours] = divmod(x, 24);
+				var [x, days] = divmod(x, 31);
+				var [years, months] = divmod(x, 12);
+				
+				return `${years} years ${months} months ${days} days ${hours} hours ${minutes} minutes`;
+			}
+			
+			document.addEventListener('DOMContentLoaded', () => {
+				var text = document.getElementById('adsasda');
+				
+				setInterval(() => text.innerText = `waiting ${computeString()} to click agree`, 1000);
+			});
+		</script>
+	</head>
+	<body style="background-color: black;">
+		<div style="margin-left:auto;margin-right:auto;height:99vh;aspect-ratio:882/1080;position:relative;">
+			<img src="bg.png" style="display:block;width:100%;height:100%;object-fit:contain;" />
+			<span style="position:absolute;top:-1%;left:11%;font-family:Impact;font-size:6.1vh;">me and the boys</span>
+			<span style="position:absolute;top:6.8%;left:12%;font-family:Impact;font-size:6.1vh;width:80%;" id="adsasda"></span>
+		</div>
+	</body>
+</html>
