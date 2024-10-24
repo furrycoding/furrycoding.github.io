@@ -1,0 +1,47 @@
+body {
+	background-color: #5d5d5d;
+}
+
+#everything_everywhere {
+	width: 100%;
+}
+
+#you_are_a {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	
+	font-family: Calibri;
+    font-size: 5em;
+	color: #eeeeee;
+}
+
+#bun_name {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	
+	font-family: Calibri;
+    font-size: 6em;
+	color: #eeeeee;
+}
+
+#new_bun {
+	margin: auto;
+	margin-top: 40px;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	
+	font-family: Calibri;
+    font-size: 3em;
+	
+	border: outset #6d6d6d;
+    background-color: #343434;
+    color: #d5d5d5;
+}
+
+#new_bun:active {
+	border-style: inset;
+}
